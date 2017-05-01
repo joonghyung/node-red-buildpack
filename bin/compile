@@ -190,6 +190,7 @@ cache_build() {
   remove_caches_from_slug "$BUILD_DIR"
 }
 
+mv $1/flow*.json $1/flow.json
 npm install node-red
 
 header "Caching build"
