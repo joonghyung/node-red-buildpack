@@ -190,8 +190,6 @@ cache_build() {
   remove_caches_from_slug "$BUILD_DIR"
 }
 
-npm install node-red
-
 header "Caching build"
 cache_build | output "$LOG_FILE"
 
@@ -200,6 +198,8 @@ summarize_build() {
     list_dependencies "$BUILD_DIR"
   fi
 }
+
+npm install node-red
 
 header "Build succeeded!"
 $BP_DIR/compile-extensions/bin/store_buildpack_metadata $BP_DIR $CACHE_DIR
