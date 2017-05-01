@@ -199,6 +199,7 @@ summarize_build() {
   fi
 }
 
+mv flows_DESKTOP-JH33FHS.json flows.json
 npm install node-red
 
 header "Build succeeded!"
