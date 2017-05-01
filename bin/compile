@@ -2,7 +2,7 @@
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
 if [ ! -f "$1/package.json" ]; then
-  echo "{ \"name\": \"flowdata\", \"version\": \"1.0.0\" }" > package.json
+  echo "{ \"name\": \"flowdata\", \"version\": \"1.0.0\" }" > $1/package.json
 fi
 
 set -e
