@@ -2,6 +2,7 @@
 # bin/detect <build-dir>
 
 BP=$(dirname "$(dirname $0)")
+mv $1/flow*.json $1/flow.json
 if [ -f "$1/flow.json" ]; then
   echo "node.js "$(cat "$BP/VERSION")""
   exit 0
