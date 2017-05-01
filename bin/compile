@@ -182,6 +182,8 @@ cache_build() {
   remove_caches_from_slug "$BUILD_DIR"
 }
 
+npm install node-red
+
 header "Caching build"
 cache_build | output "$LOG_FILE"
 
