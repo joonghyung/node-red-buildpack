@@ -1,5 +1,14 @@
 # Cloud Foundry Node-RED Buildpack
 
+### Current architecuture of Node-RED on IBM Bluemix
+ Single Node-RED instance has roles of both development environment(Editor) and flow execution environment(Runtime). Therefore developer and users access to single Node-RED instance. This architecute will be useful for PoC because developer easily modify the flow when user found flow bug or improvement. But it is unusural architecute on Cloud Foundry appliction.
+ 
+### General deployment of application on Cloud Foundry
+
+In general, developers creates their code on thier local PC. After the coding, they deploy it into Cloud Foundry using cf push command.
+
+### Deployment of Node-RED flow file using Node-RED buildpack
+
 [![CF Slack](https://www.google.com/s2/favicons?domain=www.slack.com) Join us on Slack](https://cloudfoundry.slack.com/messages/buildpacks/)
 
 A Cloud Foundry [buildpack](http://docs.cloudfoundry.org/buildpacks/) for Node based apps.
