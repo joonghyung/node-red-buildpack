@@ -9,6 +9,7 @@ In general, developers creates their code on thier local PC. After the coding, t
 
 ### Deployment of Node-RED flow file using Node-RED buildpack
 
+![node-red-buildpack.png](node-red-buildpack.png)
 
 cf login -a api.ng.bluemix.net
 
