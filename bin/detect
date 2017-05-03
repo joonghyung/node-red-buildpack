@@ -3,8 +3,8 @@
 
 BP=$(dirname "$(dirname $0)")
 
-find . | grep -E "flows_.+_cred.json$" | xargs -I{} mv {} flows_cred.json
-find . | grep -E "flows_.+.json$" | xargs -I{} mv {} flows.json
+find $1 | grep -E "flows_.+_cred.json$" | xargs -I{} mv {} $1/flows_cred.json
+find $1 | grep -E "flows_.+.json$" | xargs -I{} mv {} $1/flows.json
 
 if [ -f "$1/flows.json" ]; then
   echo "node.js "$(cat "$BP/VERSION")""
