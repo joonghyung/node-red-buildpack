@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
+find . | grep -E "flows_.+_cred.json$" | xargs -I{} mv {} flows_cred.json
+find . | grep -E "flows_.+.json$" | xargs -I{} mv {} flows.json
+
 if [ ! -f "$1/package.json" ]; then
   echo "{ \"name\": \"flowdata\", \"version\": \"1.0.0\" }" > $1/package.json
 fi
