@@ -30,5 +30,6 @@
 > cf login -a api.ng.bluemix.net
 ##### (4) Deploy flow using Node-RED buildpack
 > cd C:\\Users\\<user_name>\\
+
 > cf push <application_name> -p .node-red -b https://github.com/zuhito/node-red-buildpack.git
 
