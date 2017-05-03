@@ -13,17 +13,17 @@
 ![node-red-buildpack.png](node-red-buildpack.png)
 
 ### How to deploy
-(1) cf login -a <Cloud_Foundry_endpoint>
-(2) cf push <application_name> -p <node-red_directory> -b https://github.com/zuhito/node-red-buildpack.git
+#### (1) cf login -a <Cloud_Foundry_endpoint>
+#### (2) cf push <application_name> -p <node-red_directory> -b https://github.com/zuhito/node-red-buildpack.git
 
-* Windows environment and Bluemix case
-(1) Start Node-RED on local Windows PC
+### * Windows environment and Bluemix case
+#### (1) Start Node-RED on local Windows PC
 > node-red
-(2) Create flow and hit deploy(Save flow into the following path automatically)
+#### (2) Create flow and hit deploy(Save flow into the following path automatically)
 C:\Users\<user name>\.node-red\flows_<host name>.json
-(3) Login to Bluemix
+#### (3) Login to Bluemix
 > cf login -a api.ng.bluemix.net
-(4) Deploy flow using Node-RED buildpack
+### (4) Deploy flow using Node-RED buildpack
 cd C:\Users\<user name>\
 cf push <application_name> -p <node-red directory> -b https://github.com/zuhito/node-red-buildpack.git
 
