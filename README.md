@@ -9,6 +9,12 @@ In general, developers creates their code on thier local PC. After the coding, t
 
 ### Deployment of Node-RED flow file using Node-RED buildpack
 
+
+cf login -a api.ng.bluemix.net
+
+cf push <application_name> -p <node-red directory> -b https://github.com/zuhito/node-red-buildpack.git
+
+
 [![CF Slack](https://www.google.com/s2/favicons?domain=www.slack.com) Join us on Slack](https://cloudfoundry.slack.com/messages/buildpacks/)
 
 A Cloud Foundry [buildpack](http://docs.cloudfoundry.org/buildpacks/) for Node based apps.
