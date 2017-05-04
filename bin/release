@@ -4,5 +4,5 @@
 cat << EOF
 addons: []
 default_process_types:
-  web: node node_modules/node-red/red.js flows.json --settings settings.js
+  web: node node_modules/node-red/red.js flows.json --settings settings4cf.js
 EOF
