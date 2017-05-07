@@ -11,7 +11,7 @@
 ![php-buildpack.png](php-buildpack.png)
 
 ### Deployment of Node-RED flow file using Node-RED buildpack
- Node-RED buildpack realizes common style of application development. After developer creates flow on local Node-RED environment, they can deploy it into Cloud Foundry. In detail, cf push command send only flow file. After that, Cloud Foundry builds Node-RED instance from the flow file using Node-RED buildpack. Node-RED buildpack will be useful for scaling instances and understanding Cloud Foundry.
+ Node-RED buildpack realizes common style of application development. After developer creates flow on local Node-RED environment, they can deploy it into Cloud Foundry. In detail, cf push command send only flow file. After that, Cloud Foundry builds Node-RED instance from the flow file using Node-RED buildpack. Node-RED buildpack will be useful for Blue-green deployment and scaling instances.
  
 ![node-red-buildpack.png](node-red-buildpack.png)
 
